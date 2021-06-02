@@ -40,3 +40,6 @@ themes：主题
 hexo g
 hexo server
 打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。
+
+问题:
+修改js-css-image-文章-放到blog中
