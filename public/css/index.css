@@ -3429,6 +3429,8 @@ blockquote footer cite:before {
   -o-transition: -o-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   -ms-transition: -ms-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 #page-header.nav-fixed #nav a,
 #page-header.nav-fixed #nav #site-name,
@@ -3452,6 +3454,8 @@ blockquote footer cite:before {
   -o-transform: translate3d(0, 100%, 0);
   -ms-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 #page-header.nav-visible + .layout > .aside-content > .sticky_layout {
   top: 70px;
