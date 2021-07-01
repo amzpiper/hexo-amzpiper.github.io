@@ -48,3 +48,16 @@ _config.yml文件配置根路径问题
 2.图片问题
 post_asset_folder: true
 ![Untitled.png](Untitled.png)
+
+3.文章可以拥有如下属性：
+Setting	Description	Default
+layout	layout	post或page
+title	文章标题	文档名
+date	创建日期	文档的创建日期
+updated	修改日期	文档的修改日期
+comments	是否开启评论	true
+tags	标签	NULL
+categories	分类	NULL
+permalink	url中的名字	文档名
+thumbnail	文章缩略图	NULL
+banner	文章缩略图&文章首部banner	NULL
