@@ -43,3 +43,4 @@ hexo server
 
 问题:
 修改js-css-image-文章-放到blog中
+_config.yml文件配置根路径问题
