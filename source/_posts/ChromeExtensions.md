@@ -6,6 +6,7 @@ tags:
 categories: 浏览器插件
 thumbnail: https://img0.baidu.com/it/u=1754948549,4053210497&fm=26&fmt=auto&gp=0.jpg
 banner: https://img0.baidu.com/it/u=1754948549,4053210497&fm=26&fmt=auto&gp=0.jpg
+cover: https://img0.baidu.com/it/u=1754948549,4053210497&fm=26&fmt=auto&gp=0.jpg
 ---
 
 # 1. 概览:
