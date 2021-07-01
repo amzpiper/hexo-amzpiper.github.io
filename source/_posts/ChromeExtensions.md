@@ -2,6 +2,7 @@
 title: Chrome Extensions
 ---
 
+![Untitled.png](Untitled.png)
 
 # 1. 概览:
 
@@ -77,7 +78,7 @@ title: Chrome Extensions
 - **version** 浏览器插件版本
 - **icon** 浏览器插件图标
 
-![ChromeExtensions/Untitled%201.png](ChromeExtensions/Untitled%201.png)
+![Untitled%201.png](Untitled%201.png)
 
 - **background** 背景页的脚本路径,一般为插件目录的相对地址
 - **permissions** 允许使用的浏览器API的权限,比如contextMenus(右键菜单), tabs(操作标签), webRequest(使用web请求), storage(允许使用本地存储), “**http://**”(可以通过executeScript或者insertCSS访问的网站)
@@ -122,7 +123,7 @@ chrome.runtime.onInstalled.addListener(function() {
 
 效果如下:
 
-![ChromeExtensions/Untitled%202.png](ChromeExtensions/Untitled%202.png)
+![Untitled%202.png](Untitled%202.png)
 
 **2.设置只有.com后缀的页面才会激活插件**
 
@@ -180,7 +181,7 @@ chrome.runtime.onMessage.addListener(
 
 以上代码中我们定义了content_scripts允许注入的页面范围, 插入页面的js以及css, 这样我们就能轻松改变某一个页面的样式.比如我们可以在页面中注入一个按钮:
 
-![ChromeExtensions/Untitled%203.png](ChromeExtensions/Untitled%203.png)
+![Untitled%203.png](Untitled%203.png)
 
 后面的浏览器插件案例中会详细介绍content_scripts的用法.
 
@@ -219,7 +220,7 @@ popup是用户点击插件图标时打开的一个小窗口，当失去焦点后
 
 以下是笔者写的一个插件的popup页面:
 
-![ChromeExtensions/Untitled%204.png](ChromeExtensions/Untitled%204.png)
+![Untitled%204.png](Untitled%204.png)
 
 ## 2.3.通信机制
 
