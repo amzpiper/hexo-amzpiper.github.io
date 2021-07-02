@@ -53,6 +53,10 @@ algolia_search:
   enable: true
   hits:
     per_page: 6
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "我们没有找到任何搜索结果: ${query}"
+    hits_stats: "找到约${hits}条结果（用时${time}ms）"
 
 # Local search
 local_search:
@@ -619,12 +623,12 @@ subtitle:
   # source: 3  調用一句網（簡體）
   # source: 4  調用今日詩詞（簡體）
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: false
+  source: 2
   # 如果有英文逗號' , ',請使用轉義字元 &#44;
   # 如果有英文雙引號' " ',請使用轉義字元 &quot;
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
-  sub: 花无重开日，人无再少年。相逢拌酩酊，何必备芳鲜
+  # sub: 花无重开日，人无再少年。相逢拌酩酊，何必备芳鲜
 
 # Loading Animation (加載動畫)
 preloader: false
@@ -665,7 +669,7 @@ aside:
     color: false
     sort_order: # Don't modify the setting unless you know how it works
   card_archives:
-    enable: false
+    enable: true
     type: monthly # yearly or monthly
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
