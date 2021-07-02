@@ -62,3 +62,19 @@ categories	分类	NULL
 permalink	url中的名字	文档名
 thumbnail	文章缩略图	NULL
 banner	文章缩略图&文章首部banner	NULL
+
+4.Git 无法添加文件夹下文件（如：Hexo下themes的模板文件）
+
+可能是该子文件夹下有.git文件夹导致无法上传
+1. 删除子文件夹下.git后，依然无法提交子文件夹下的文件。
+
+2. git rm --cached themes/hueman
+
+3. git add .
+
+4. git commit -m "xxx"
+
+5. git push origin master
+
+如果执行git rm --cached directory 提示fatal: Unable to create
+‘xx/.git/index.lock’: File exists. 执行rm -f xx/.git/index.lock后解决
