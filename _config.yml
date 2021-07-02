@@ -106,3 +106,9 @@ deploy:
   type: git
   repo: git@github.com:amzpiper/amzpiper.github.io.git
   branch: main
+
+# Algolia Search API Key
+algolia:
+  applicationID: '817TG72HTO'
+  apiKey: '95b2a21f4cdb2875f04e2f8043cd9b9f'
+  indexName: 'hexo'
