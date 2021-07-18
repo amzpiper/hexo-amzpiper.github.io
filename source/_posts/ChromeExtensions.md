@@ -1,9 +1,10 @@
 ---
 title: Chrome Extensions
+date: 2017-09-15 19:00:41
 comments: true
 tags: 
-    - Chrome Extensions
-categories: 浏览器插件
+    - 浏览器插件
+categories: 插件
 thumbnail: https://img0.baidu.com/it/u=1754948549,4053210497&fm=26&fmt=auto&gp=0.jpg
 banner: https://img0.baidu.com/it/u=1754948549,4053210497&fm=26&fmt=auto&gp=0.jpg
 cover: https://img0.baidu.com/it/u=1754948549,4053210497&fm=26&fmt=auto&gp=0.jpg
