@@ -14,8 +14,8 @@ menu:
   # List||fas fa-list:
     # Music: /music/ || fas fa-music
     # Movie: /movies/ || fas fa-video
-  Project||fas fa-list: 
-    Easy-Mock: http://mock.amzpiper.com || fas fa-link
+  # Project||fas fa-list: 
+    # Easy-Mock: http://mock.amzpiper.com || fas fa-link
   # About: /about/ || fas fa-heart
   Categories: /categories/ || fas fa-folder-open
   Tags: /tags/ || fas fa-tags

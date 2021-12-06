@@ -10,10 +10,6 @@ banner: https://z3.ax1x.com/2021/07/18/W3HSDP.png
 cover: https://z3.ax1x.com/2021/07/18/W3HSDP.png
 ---
 
-# learn-typescript
-
-Created: December 14, 2020 12:34 PM
-
 ![Untitled.png](Untitled.png)
 
 # **10分钟搞定TypeScript 语法**
