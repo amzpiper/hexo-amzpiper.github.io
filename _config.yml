@@ -112,3 +112,10 @@ algolia:
   applicationID: '817TG72HTO'
   apiKey: '95b2a21f4cdb2875f04e2f8043cd9b9f'
   indexName: 'hexo'
+
+# Local search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

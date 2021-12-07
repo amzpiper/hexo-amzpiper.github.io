@@ -45,8 +45,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+  fab fa-github: https://github.com/amzpiper || Github
+  fas fa-envelope: mailto:15512702732@163.com || Email
 
 # search (搜索)
 # --------------------------------------
@@ -63,7 +63,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
 
 # Math (數學)
 # --------------------------------------
@@ -649,7 +649,7 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: 关注我的GitHub
       link: https://github.com/amzpiper

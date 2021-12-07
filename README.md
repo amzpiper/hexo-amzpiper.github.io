@@ -76,3 +76,7 @@ banner	文章缩略图&文章首部banner	NULL
 5.Hexo集成Algolia搜索
 npm install hexo-algolia --save
 https://segmentfault.com/a/1190000018803949
+
+6.Hexo集成本地搜索
+npm install hexo-generator-search --save
+npm install hexo-generator-searchdb --save
