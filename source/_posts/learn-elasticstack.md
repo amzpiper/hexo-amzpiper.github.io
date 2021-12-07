@@ -5,9 +5,9 @@ comments: true
 tags: 
     - elasticstack
 categories: 中间件
-thumbnail: logo.jpeg
-banner: logo.jpeg
-cover: logo.jpeg
+thumbnail: Untitled.png
+banner: Untitled.png
+cover: Untitled.png
 ---
 
 

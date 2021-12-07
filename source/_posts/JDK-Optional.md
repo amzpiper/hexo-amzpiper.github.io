@@ -5,9 +5,6 @@ comments: true
 tags: 
     - 新特性
 categories: jdk8
-thumbnail: https://images2017.cnblogs.com/blog/782702/201709/782702-20170923094507806-345950041.png
-banner: https://images2017.cnblogs.com/blog/782702/201709/782702-20170923094507806-345950041.png
-cover: https://images2017.cnblogs.com/blog/782702/201709/782702-20170923094507806-345950041.png
 ---
 
 

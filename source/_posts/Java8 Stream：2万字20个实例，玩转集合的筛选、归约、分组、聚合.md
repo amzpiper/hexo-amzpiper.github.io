@@ -1,13 +1,10 @@
 ---
-title: Java8 Stream
+title: Java8 Stream：2万字20个实例，玩转集合的筛选、归约、分组、聚合
 date: 2020-10-14 12:00:41
 comments: true
 tags: 
     - 新特性
-categories: Java8
-thumbnail: https://mmbiz.qpic.cn/mmbiz_png/oTKHc6F8tshlcDdYLwybrjgMR9CvUtJxLfiaDrpVicXB9IRHibwib8ahP8StxILIwao9J1nG13d1E76ZNaB3domqiaw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1
-banner: https://mmbiz.qpic.cn/mmbiz_png/oTKHc6F8tshlcDdYLwybrjgMR9CvUtJxLfiaDrpVicXB9IRHibwib8ahP8StxILIwao9J1nG13d1E76ZNaB3domqiaw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1
-cover: https://mmbiz.qpic.cn/mmbiz_png/oTKHc6F8tshlcDdYLwybrjgMR9CvUtJxLfiaDrpVicXB9IRHibwib8ahP8StxILIwao9J1nG13d1E76ZNaB3domqiaw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1
+categories: jdk8
 ---
 
 blog.csdn.net/mu_wind/article/details/109516995
