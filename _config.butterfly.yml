@@ -97,15 +97,16 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://xiabor.com/img/avatar.png
+  img: /img/avatar.jpeg
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/xiabor/img/Tibet/among-trees-f3-3840x2160.jpg
-
+index_img: https://s3.bmp.ovh/imgs/2021/12/e0a043230d059110.jpg
+#https://static.monknow.com/newtab/wallpaper/e0a23142de1d2c97c3bdc17c78a18c12.jpg
+#https://cdn.jsdelivr.net/gh/xiabor/img/Tibet/among-trees-f3-3840x2160.jpg
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://s2.ax1x.com/2019/12/02/QuTEIe.jpg
 
@@ -144,7 +145,7 @@ cover:
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: /img/friend_404.gif
+  flink: /img/loading.gif
   post_page: /img/404.jpg
 
 # A simple 404 page
@@ -235,7 +236,7 @@ post_pagination: 1
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
-anchor: false
+anchor: true
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
@@ -518,7 +519,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: linear-gradient(to right, red , yellow)
+background: 
 
 # Footer Background
 footer_bg: false
@@ -695,9 +696,9 @@ aside:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: false
-  site_pv: false
-  page_pv: false
+  site_uv: true
+  site_pv: true
+  page_pv: true
 
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
@@ -862,11 +863,15 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css">
+#    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css">
+    - <link rel="stylesheet" href="/my/index.min.css">
   bottom:
-    - <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
-    - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>
-    - <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async=""></script>
+#    - <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+#    - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fishes.js"></script>
+#    - <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async=""></script>
+    - <script src="/my/jquery.min.js"></script>
+    - <script src="/my/fishes.js"></script>
+    - <script src="/my/lazyload.iife.min.js" async=""></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
