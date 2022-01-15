@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java 8 - Optional | 私人知识图书馆</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="包含: Java 基础, Java 部分源码, JVM, Spring, Spring Boot, Spring Cloud, 数据库原理, MySQL, ElasticSearch, MongoDB, Docker, k8s, CI&amp;CD, Linux, DevOps, 分布式, 中间件, 开发工具, Git, IDE, 源码阅读，读书笔记, 开源项目...">
+    <meta name="robots" content="all">
+    <meta name="author" content="pdai">
+    <meta name="keywords" content="私人知识图书馆, java体系, java知识体系, java框架,java详解,java学习路线,java spring, java面试, 知识体系, java技术体系, java编程, java编程指南,java开发体系, java开发,java教程,java,java数据结构, 算法, 开发基础">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.cb877f3d.css" as="style"><link rel="preload" href="/assets/js/app.1f563e48.js" as="script"><link rel="preload" href="/assets/js/3.53f669bd.js" as="script"><link rel="preload" href="/assets/js/18.5e9ee40a.js" as="script"><link rel="prefetch" href="/assets/js/10.676c5100.js"><link rel="prefetch" href="/assets/js/11.9df653b2.js"><link rel="prefetch" href="/assets/js/12.b17e6356.js"><link rel="prefetch" href="/assets/js/13.ed90e22e.js"><link rel="prefetch" href="/assets/js/14.61f9cd6f.js"><link rel="prefetch" href="/assets/js/15.ac0ef010.js"><link rel="prefetch" href="/assets/js/16.3e29f439.js"><link rel="prefetch" href="/assets/js/17.90c09287.js"><link rel="prefetch" href="/assets/js/19.f113b0b6.js"><link rel="prefetch" href="/assets/js/2.a4f6f631.js"><link rel="prefetch" href="/assets/js/20.708a3e23.js"><link rel="prefetch" href="/assets/js/21.3a0dc559.js"><link rel="prefetch" href="/assets/js/22.72642347.js"><link rel="prefetch" href="/assets/js/4.498eb10c.js"><link rel="prefetch" href="/assets/js/5.ee589329.js"><link rel="prefetch" href="/assets/js/6.4e969a30.js"><link rel="prefetch" href="/assets/js/7.1153cd27.js"><link rel="prefetch" href="/assets/js/8.cb8ac540.js"><link rel="prefetch" href="/assets/js/9.5e517e4f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cb877f3d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/favicon.ico" alt="私人知识图书馆" class="logo"> <span class="site-name can-hide">私人知识图书馆</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  概述
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/learn-typescript.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/ChromeExtensions.html" class="nav-link">
+  ChromeExtensions
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Java
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/Java8-Stream.html" class="nav-link">
+  Stream
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Java8-Optional.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Optional
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/Spring笔记.html" class="nav-link">
+  Spring笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Spring-MVC笔记.html" class="nav-link">
+  SpringMVC笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Mybatis笔记.html" class="nav-link">
+  Mybatis笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Maven学习笔记.html" class="nav-link">
+  Maven学习笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-zookeeper.html" class="nav-link">
+  Zookeeper
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-elasticstack.html" class="nav-link">
+  Elasticstack
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Dubbo学习笔记.html" class="nav-link">
+  Dubbo学习笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具|部署" class="dropdown-title"><span class="title">工具|部署</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具|部署" class="mobile-dropdown-title"><span class="title">工具|部署</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/java/tool/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/md/java/tool/gittool.html" class="nav-link">
+  Gitee
+</a></li></ul></div></div><div class="nav-item"><a href="/md/about/about-me.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/amzpiper" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  概述
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/learn-typescript.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/ChromeExtensions.html" class="nav-link">
+  ChromeExtensions
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Java
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/Java8-Stream.html" class="nav-link">
+  Stream
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Java8-Optional.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Optional
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/Spring笔记.html" class="nav-link">
+  Spring笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Spring-MVC笔记.html" class="nav-link">
+  SpringMVC笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Mybatis笔记.html" class="nav-link">
+  Mybatis笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Maven学习笔记.html" class="nav-link">
+  Maven学习笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-zookeeper.html" class="nav-link">
+  Zookeeper
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-elasticstack.html" class="nav-link">
+  Elasticstack
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Dubbo学习笔记.html" class="nav-link">
+  Dubbo学习笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具|部署" class="dropdown-title"><span class="title">工具|部署</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具|部署" class="mobile-dropdown-title"><span class="title">工具|部署</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/java/tool/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/md/java/tool/gittool.html" class="nav-link">
+  Gitee
+</a></li></ul></div></div><div class="nav-item"><a href="/md/about/about-me.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/amzpiper" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/md/java/learn/learn-typescript.html" class="sidebar-link">TypeScript</a></li><li><a href="/md/java/learn/ChromeExtensions.html" class="sidebar-link">Chrome Extensions</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Java</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/md/java/learn/Java8-Stream.html" class="sidebar-link">Java 8 - Stream</a></li><li><a href="/md/java/learn/Java8-Optional.html" aria-current="page" class="active sidebar-link">Java 8 - Optional</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/md/java/learn/Java8-Optional.html#创建-optional-实例" class="sidebar-link">创建 *Optional* 实例</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/Java8-Optional.html#访问-optional-对象的值" class="sidebar-link">访问 *Optional* 对象的值</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/Java8-Optional.html#返回默认值" class="sidebar-link">返回默认值</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/Java8-Optional.html#返回异常" class="sidebar-link">返回异常</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/Java8-Optional.html#转换值和过滤值" class="sidebar-link">转换值和过滤值</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/Java8-Optional.html#optional-类的链式方法" class="sidebar-link">Optional 类的链式方法</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/Java8-Optional.html#java-9-增强" class="sidebar-link">Java 9 增强</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/Java8-Optional.html#optional-应该怎样用" class="sidebar-link">*Optional* 应该怎样用？</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/Java8-Optional.html#总结" class="sidebar-link">总结</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>框架</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/md/java/learn/Spring笔记.html" class="sidebar-link">Spring</a></li><li><a href="/md/java/learn/Spring-MVC笔记.html" class="sidebar-link">SpringMVC</a></li><li><a href="/md/java/learn/Mybatis笔记.html" class="sidebar-link">Mybatis</a></li><li><a href="/md/java/learn/Maven学习笔记.html" class="sidebar-link">Maven</a></li><li><a href="/md/java/learn/learn-zookeeper.html" class="sidebar-link">Zookeeper</a></li><li><a href="/md/java/learn/learn-redis.html" class="sidebar-link">Redis</a></li><li><a href="/md/java/learn/learn-elasticstack.html" class="sidebar-link">Elasticstack</a></li><li><a href="/md/java/learn/Dubbo学习笔记.html" class="sidebar-link">Dubbo</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="java-8-optional"><a href="#java-8-optional" class="header-anchor">#</a> Java 8 - Optional</h1> <blockquote><p>从 Java 8 引入的一个很有趣的特性是 <em>Optional</em>  类。Optional 类主要解决的问题是臭名昭著的空指针异常（NullPointerException） —— 每个 Java 程序员都非常了解的异常。</p></blockquote> <blockquote><p>本质上，这是一个包含有可选值的包装类，这意味着 Optional 类既可以含有对象也可以为空。</p></blockquote> <blockquote><p>Optional 是 Java 实现函数式编程的强劲一步，并且帮助在范式中实现。但是 Optional 的意义显然不止于此。</p></blockquote> <p>我们从一个简单的用例开始。在 Java 8 之前，任何访问对象方法或属性的调用都可能导致 <em>NullPointerException</em>：</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">String</span> isocode <span class="token operator">=</span> user<span class="token punctuation">.</span><span class="token function">getAddress</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getCountry</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getIsocode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>在这个小示例中，如果我们需要确保不触发异常，就得在访问每一个值之前对其进行明确地检查：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>if (user != null) {
+    Address address = user.getAddress();
+    if (address != null) {
+        Country country = address.getCountry();
+        if (country != null) {
+            String isocode = country.getIsocode();
+            if (isocode != null) {
+                isocode = isocode.toUpperCase();
+            }
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>你看到了，这很容易就变得冗长，难以维护。</p> <p>为了简化这个过程，我们来看看用 <em>Optional</em>  类是怎么做的。从创建和验证实例，到使用其不同的方法，并与其它返回相同类型的方法相结合，下面是见证 <em>Optional</em>  奇迹的时刻。</p> <h2 id="创建-optional-实例"><a href="#创建-optional-实例" class="header-anchor">#</a> <strong>创建 <em>Optional</em> 实例</strong></h2> <p>重申一下，这个类型的对象可能包含值，也可能为空。你可以使用同名方法创建一个空的 Optional。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test(expected = NoSuchElementException.class)
+public void whenCreateEmptyOptional_thenNull() {
+    Optional&lt;User&gt; emptyOpt = Optional.empty();
+    emptyOpt.get();
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>毫不奇怪，尝试访问 <em>emptyOpt</em> 变量的值会导致 <em>NoSuchElementException</em>。</p> <p>你可以使用  <em>of()</em> 和 ofNullable() 方法创建包含值的 <em>Optional</em>。两个方法的不同之处在于如果你把 <em>null</em> 值作为参数传递进去，<em>of()</em> 方法会抛出 <em>NullPointerException</em>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test(expected = NullPointerException.class)
+public void whenCreateOfEmptyOptional_thenNullPointerException() {
+    Optional&lt;User&gt; opt = Optional.of(user);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>你看，我们并没有完全摆脱 <em>NullPointerException</em>。因此，你应该明确对象不为 <em>null</em>  的时候使用 <em>of()</em>。</p> <p>如果对象即可能是 <em>null</em> 也可能是非 null，你就应该使用 <em>ofNullable()</em> 方法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Optional&lt;User&gt; opt = Optional.ofNullable(user);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="访问-optional-对象的值"><a href="#访问-optional-对象的值" class="header-anchor">#</a> <strong>访问 <em>Optional</em> 对象的值</strong></h2> <p>从 <em>Optional</em> 实例中取回实际值对象的方法之一是使用 <em>get()</em> 方法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenCreateOfNullableOptional_thenOk() {
+    String name = &quot;John&quot;;
+    Optional&lt;String&gt; opt = Optional.ofNullable(name);
+
+    assertEquals(&quot;John&quot;, opt.get());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>不过，你看到了，这个方法会在值为 <em>null</em> 的时候抛出异常。要避免异常，你可以选择首先验证是否有值：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenCheckIfPresent_thenOk() {
+    User user = new User(&quot;john@gmail.com&quot;, &quot;1234&quot;);
+    Optional&lt;User&gt; opt = Optional.ofNullable(user);
+    assertTrue(opt.isPresent());
+
+    assertEquals(user.getEmail(), opt.get().getEmail());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>检查是否有值的另一个选择是 <em>ifPresent()</em> 方法。该方法除了执行检查，还接受一个<em>Consumer(消费者</em>) 参数，如果对象不是空的，就对执行传入的 Lambda 表达式：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>opt.ifPresent( u -&gt; assertEquals(user.getEmail(), u.getEmail()));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这个例子中，只有 user 用户不为 null 的时候才会执行断言。</p> <p>接下来，我们来看看提供空值的方法。</p> <h2 id="返回默认值"><a href="#返回默认值" class="header-anchor">#</a> <strong>返回默认值</strong></h2> <p><em>Optional</em> 类提供了 API 用以返回对象值，或者在对象为空的时候返回默认值。</p> <p>这里你可以使用的第一个方法是 <em>orElse()</em>，它的工作方式非常直接，如果有值则返回该值，否则返回传递给它的参数值：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenEmptyValue_thenReturnDefault() {
+    User user = null;
+    User user2 = new User(&quot;anna@gmail.com&quot;, &quot;1234&quot;);
+    User result = Optional.ofNullable(user).orElse(user2);
+
+    assertEquals(user2.getEmail(), result.getEmail());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>这里 <em>user</em> 对象是空的，所以返回了作为默认值的 <em>user2</em>。</p> <p>如果对象的初始值不是 null，那么默认值会被忽略：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenValueNotNull_thenIgnoreDefault() {
+    User user = new User(&quot;john@gmail.com&quot;,&quot;1234&quot;);
+    User user2 = new User(&quot;anna@gmail.com&quot;, &quot;1234&quot;);
+    User result = Optional.ofNullable(user).orElse(user2);
+
+    assertEquals(&quot;john@gmail.com&quot;, result.getEmail());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>第二个同类型的 API 是 <em>orElseGet()</em> —— 其行为略有不同。这个方法会在有值的时候返回值，如果没有值，它会执行作为参数传入的 <em>Supplier(供应者)</em> 函数式接口，并将返回其执行结果：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>User result = Optional.ofNullable(user).orElseGet( () -&gt; user2);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="orelse-和-orelseget-的不同之处"><a href="#orelse-和-orelseget-的不同之处" class="header-anchor">#</a> <strong><em>orElse()</em> 和 <em>orElseGet()</em> 的不同之处</strong></h3> <p>乍一看，这两种方法似乎起着同样的作用。然而事实并非如此。我们创建一些示例来突出二者行为上的异同。</p> <p>我们先来看看对象为空时他们的行为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void givenEmptyValue_whenCompare_thenOk() {
+    User user = null
+    logger.debug(&quot;Using orElse&quot;);
+    User result = Optional.ofNullable(user).orElse(createNewUser());
+    logger.debug(&quot;Using orElseGet&quot;);
+    User result2 = Optional.ofNullable(user).orElseGet(() -&gt; createNewUser());
+}
+
+private User createNewUser() {
+    logger.debug(&quot;Creating New User&quot;);
+    return new User(&quot;extra@gmail.com&quot;, &quot;1234&quot;);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>上面的代码中，两种方法都调用了 <em>createNewUser()</em> 方法，这个方法会记录一个消息并返回 <em>User</em> 对象。</p> <p>代码输出如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Using orElse
+Creating New User
+Using orElseGet
+Creating New User
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>由此可见，当对象为空而返回默认对象时，行为并无差异。</p> <p>我们接下来看一个类似的示例，但这里 <em>Optional</em>  不为空：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void givenPresentValue_whenCompare_thenOk() {
+    User user = new User(&quot;john@gmail.com&quot;, &quot;1234&quot;);
+    logger.info(&quot;Using orElse&quot;);
+    User result = Optional.ofNullable(user).orElse(createNewUser());
+    logger.info(&quot;Using orElseGet&quot;);
+    User result2 = Optional.ofNullable(user).orElseGet(() -&gt; createNewUser());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>这次的输出：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Using orElse
+Creating New User
+Using orElseGet
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这个示例中，两个 <em>Optional</em>  对象都包含非空值，两个方法都会返回对应的非空值。不过，<em>orElse()</em> 方法仍然创建了 <em>User</em> 对象。<strong>与之相反，<em>orElseGet()</em> 方法不创建 <em>User</em> 对象。</strong></p> <p>在执行较密集的调用时，比如调用 Web 服务或数据查询，<strong>这个差异会对性能产生重大影响</strong>。</p> <h2 id="返回异常"><a href="#返回异常" class="header-anchor">#</a> <strong>返回异常</strong></h2> <p>除了 <em>orElse()</em> 和 <em>orElseGet()</em> 方法，Optional 还定义了 <em>orElseThrow()</em> API —— 它会在对象为空的时候抛出异常，而不是返回备选的值：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test(expected = IllegalArgumentException.class)
+public void whenThrowException_thenOk() {
+    User result = Optional.ofNullable(user)
+      .orElseThrow( () -&gt; new IllegalArgumentException());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>这里，如果 <em>user</em> 值为 null，会抛出 <em>IllegalArgumentException</em>。</p> <p>这个方法让我们有更丰富的语义，可以决定抛出什么样的异常，而不总是抛出 <em>NullPointerException</em>。</p> <p>现在我们已经很好地理解了如何使用 Optional，我们来看看其它可以对 <em>Optional</em> 值进行转换和过滤的方法。</p> <h2 id="转换值和过滤值"><a href="#转换值和过滤值" class="header-anchor">#</a> <strong>转换值和过滤值</strong></h2> <h3 id="转换值"><a href="#转换值" class="header-anchor">#</a> <strong>转换值</strong></h3> <p>有很多种方法可以转换 <em>Optional</em>  的值。我们从 <em>map()</em> 和 <em>flatMap()</em> 方法开始。</p> <p>先来看一个使用 <em>map()</em> API 的例子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenMap_thenOk() {
+    User user = new User(&quot;anna@gmail.com&quot;, &quot;1234&quot;);
+    String email = Optional.ofNullable(user)
+      .map(u -&gt; u.getEmail()).orElse(&quot;default@gmail.com&quot;);
+
+    assertEquals(email, user.getEmail());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><em><em><em>map()</em> 对值应用(调用)作为参数的</em>函数</em>，然后将返回的值包装在 <em>Optional</em> 中。**这就使对返回值进行链试调用的操作成为可能 —— 这里的下一环就是 <em>orElse()</em>。</p> <p>相比这下，<em>flatMap()</em> 也需要<em>函数</em>作为参数，并对值调用这个函数，然后直接返回结果。</p> <p>下面的操作中，我们给 <em>User</em> 类添加了一个方法，用来返回 <em>Optional</em>：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class User {
+    private String position;
+
+    public Optional&lt;String&gt; getPosition() {
+        return Optional.ofNullable(position);
+    }
+
+    //...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>既然 getter 方法返回 String 值的 <em>Optional</em>，你可以在对 <em>User 的 Optional</em> 对象调用 <em>flatMap()</em> 时，用它作为参数。其返回的值是解除包装的 String 值：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenFlatMap_thenOk() {
+    User user = new User(&quot;anna@gmail.com&quot;, &quot;1234&quot;);
+    user.setPosition(&quot;Developer&quot;);
+    String position = Optional.ofNullable(user)
+      .flatMap(u -&gt; u.getPosition()).orElse(&quot;default&quot;);
+
+    assertEquals(position, user.getPosition().get());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="过滤值"><a href="#过滤值" class="header-anchor">#</a> <strong>过滤值</strong></h3> <p>除了转换值之外，<em>Optional</em>  类也提供了按条件“过滤”值的方法。</p> <p><strong><em>filter()</em> 接受一个 <em>Predicate</em> 参数</strong>，返回测试结果为 true 的值。如果测试结果为 false，会返回一个空的 <em>Optional</em>。</p> <p>来看一个根据基本的电子邮箱验证来决定接受或拒绝 <em>User(用户)</em> 的示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenFilter_thenOk() {
+    User user = new User(&quot;anna@gmail.com&quot;, &quot;1234&quot;);
+    Optional&lt;User&gt; result = Optional.ofNullable(user)
+      .filter(u -&gt; u.getEmail() != null &amp;&amp; u.getEmail().contains(&quot;@&quot;));
+
+    assertTrue(result.isPresent());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>如果通过过滤器测试，<em>result</em> 对象会包含非空值。</p> <h2 id="optional-类的链式方法"><a href="#optional-类的链式方法" class="header-anchor">#</a> Optional 类的链式方法</h2> <p>为了更充分的使用 <em>Optional</em>，你可以链接组合其大部分方法，因为它们都返回相同类似的对象。</p> <p>我们使用 <em>Optional</em>  重写最早介绍的示例。</p> <p>首先，重构类，使其 getter 方法返回 <em>Optional</em> 引用：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>public class User {
+    private Address address;
+
+    public Optional&lt;Address&gt; getAddress() {
+        return Optional.ofNullable(address);
+    }
+
+    // ...
+}
+public class Address {
+    private Country country;
+
+    public Optional&lt;Country&gt; getCountry() {
+        return Optional.ofNullable(country);
+    }
+
+    // ...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>上面的嵌套结构可以用下面的图来表示：</p> <p><img src="https://images2017.cnblogs.com/blog/782702/201709/782702-20170923094507806-345950041.png" alt="https://images2017.cnblogs.com/blog/782702/201709/782702-20170923094507806-345950041.png"></p> <p>现在可以删除 <em>null</em> 检查，替换为 <em>Optional</em> 的方法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenChaining_thenOk() {
+    User user = new User(&quot;anna@gmail.com&quot;, &quot;1234&quot;);
+
+    String result = Optional.ofNullable(user)
+      .flatMap(u -&gt; u.getAddress())
+      .flatMap(a -&gt; a.getCountry())
+      .map(c -&gt; c.getIsocode())
+      .orElse(&quot;default&quot;);
+
+    assertEquals(result, &quot;default&quot;);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>上面的代码可以通过方法引用进一步缩减：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>String result = Optional.ofNullable(user)
+  .flatMap(User::getAddress)
+  .flatMap(Address::getCountry)
+  .map(Country::getIsocode)
+  .orElse(&quot;default&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>结果现在的代码看起来比之前采用条件分支的冗长代码简洁多了。</p> <h2 id="java-9-增强"><a href="#java-9-增强" class="header-anchor">#</a> <strong>Java 9 增强</strong></h2> <p>我们介绍了 Java 8 的特性，<strong>Java 9 为 Optional 类添加了三个方法：<em>or()</em>、<em>ifPresentOrElse()</em> 和 <em>stream()</em>。</strong></p> <p><em>or()</em> 方法与 <em>orElse()</em> 和 <em>orElseGet()</em> 类似，它们都在对象为空的时候提供了替代情况。<em>or()</em> 的返回值是由 <em>Supplier</em> 参数产生的另一个 <em>Optional</em> 对象。</p> <p>如果对象包含值，则 Lambda 表达式不会执行：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenEmptyOptional_thenGetValueFromOr() {
+    User result = Optional.ofNullable(user)
+      .or( () -&gt; Optional.of(new User(&quot;default&quot;,&quot;1234&quot;))).get();
+
+    assertEquals(result.getEmail(), &quot;default&quot;);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>上面的示例中，如果 <em>user</em> 变量是 null，它会返回一个 <em>Optional</em>，它所包含的 <em>User</em> 对象，其电子邮件为 “default”。</p> <p><em>ifPresentOrElse()</em> 方法需要两个参数：一个 <em>Consumer</em> 和一个 <em>Runnable</em>。如果对象包含值，会执行 <em>Consumer</em> 的动作，否则运行 <em>Runnable</em>。</p> <p>如果你想在有值的时候执行某个动作，或者只是跟踪是否定义了某个值，那么这个方法非常有用：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Optional.ofNullable(user).ifPresentOrElse( u -&gt; logger.info(&quot;User is:&quot; + u.getEmail()),
+  () -&gt; logger.info(&quot;User not found&quot;));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>最后介绍的是新的 <em>stream()</em> 方法，它**通过把实例转换为 <em>Stream</em> 对象，**让你从广大的 <em>Stream</em> API 中受益。如果没有值，它会得到空的 <em>Stream</em>；有值的情况下，<em>Stream</em> 则会包含单一值。</p> <p>我们来看一个把 <em>Optional</em> 处理成 <em>Stream</em> 的例子：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenGetStream_thenOk() {
+    User user = new User(&quot;john@gmail.com&quot;, &quot;1234&quot;);
+    List&lt;String&gt; emails = Optional.ofNullable(user)
+      .stream()
+      .filter(u -&gt; u.getEmail() != null &amp;&amp; u.getEmail().contains(&quot;@&quot;))
+      .map( u -&gt; u.getEmail())
+      .collect(Collectors.toList());
+
+    assertTrue(emails.size() == 1);
+    assertEquals(emails.get(0), user.getEmail());
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>这里对 <em>Stream</em> 的使用带来了其 <em>filter()、map()</em> 和 <em>collect()</em> 接口，以获取 <em>List</em>。</p> <h2 id="optional-应该怎样用"><a href="#optional-应该怎样用" class="header-anchor">#</a> <strong><em>Optional</em> 应该怎样用？</strong></h2> <p>在使用 <em>Optional</em> 的时候需要考虑一些事情，以决定什么时候怎样使用它。</p> <p>重要的一点是 <strong><em>Optional</em> 不是 <em>Serializable</em></strong>。因此，它不应该用作类的字段。</p> <p>如果你需要序列化的对象包含 <em>Optional</em> 值，*<a href="https://stackify.com/java-xml-jackson/" target="_blank" rel="noopener noreferrer">Jackson* 库<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>支持把 <em>Optional</em> 当作普通对象。也就是说，<em>Jackson</em> 会把空对象看作 <em>null</em>，而有值的对象则把其值看作对应域的值。这个功能在 <a href="https://github.com/FasterXML/jackson-modules-java8" target="_blank" rel="noopener noreferrer">jackson-modules-java8<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 项目中。</p> <p>它在另一种情况下也并不怎么有用，就是在将其类型用作方法或构建方法的参数时。这样做会让代码变得复杂，完全没有必要：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>User user = new User(&quot;john@gmail.com&quot;, &quot;1234&quot;, Optional.empty());
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>使用重载方法来处理非要的参数要容易得多。</p> <p>**<em>Optional</em> 主要用作返回类型。**在获取到这个类型的实例后，如果它有值，你可以取得这个值，否则可以进行一些替代行为。</p> <p><em>Optional</em> 类有一个非常有用的用例，就是将其与流或其它返回 <em>Optional</em> 的方法结合，以<strong>构建流畅的API</strong>。</p> <p>我们来看一个示例，使用 <em>Stream</em> 返回 <em>Optional</em> 对象的 <em>findFirst()</em> 方法：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@Test
+public void whenEmptyStream_thenReturnDefaultOptional() {
+    List&lt;User&gt; users = new ArrayList&lt;&gt;();
+    User user = users.stream().findFirst().orElse(new User(&quot;default&quot;, &quot;1234&quot;));
+
+    assertEquals(user.getEmail(), &quot;default&quot;);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="总结"><a href="#总结" class="header-anchor">#</a> <strong>总结</strong></h2> <p><em>Optional</em> 是 Java 语言的有益补充 —— 它旨在减少代码中的 <em>NullPointerExceptions</em>，虽然还不能完全消除这些异常。</p> <p>它也是精心设计，自然融入 Java 8 函数式支持的功能。</p> <p>总的来说，这个简单而强大的类有助于创建简单、可读性更强、比对应程序错误更少的程序。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/1/15 下午2:19:19</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/md/java/learn/Java8-Stream.html" class="prev">
+        Java 8 - Stream
+      </a></span> <span class="next"><a href="/md/java/learn/Spring笔记.html">
+        Spring
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.1f563e48.js" defer></script><script src="/assets/js/3.53f669bd.js" defer></script><script src="/assets/js/18.5e9ee40a.js" defer></script>
+  </body>
+</html>

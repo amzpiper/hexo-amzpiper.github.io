@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chrome Extensions | 私人知识图书馆</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="包含: Java 基础, Java 部分源码, JVM, Spring, Spring Boot, Spring Cloud, 数据库原理, MySQL, ElasticSearch, MongoDB, Docker, k8s, CI&amp;CD, Linux, DevOps, 分布式, 中间件, 开发工具, Git, IDE, 源码阅读，读书笔记, 开源项目...">
+    <meta name="robots" content="all">
+    <meta name="author" content="pdai">
+    <meta name="keywords" content="私人知识图书馆, java体系, java知识体系, java框架,java详解,java学习路线,java spring, java面试, 知识体系, java技术体系, java编程, java编程指南,java开发体系, java开发,java教程,java,java数据结构, 算法, 开发基础">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.cb877f3d.css" as="style"><link rel="preload" href="/assets/js/app.1f563e48.js" as="script"><link rel="preload" href="/assets/js/3.53f669bd.js" as="script"><link rel="preload" href="/assets/js/9.5e517e4f.js" as="script"><link rel="prefetch" href="/assets/js/10.676c5100.js"><link rel="prefetch" href="/assets/js/11.9df653b2.js"><link rel="prefetch" href="/assets/js/12.b17e6356.js"><link rel="prefetch" href="/assets/js/13.ed90e22e.js"><link rel="prefetch" href="/assets/js/14.61f9cd6f.js"><link rel="prefetch" href="/assets/js/15.ac0ef010.js"><link rel="prefetch" href="/assets/js/16.3e29f439.js"><link rel="prefetch" href="/assets/js/17.90c09287.js"><link rel="prefetch" href="/assets/js/18.5e9ee40a.js"><link rel="prefetch" href="/assets/js/19.f113b0b6.js"><link rel="prefetch" href="/assets/js/2.a4f6f631.js"><link rel="prefetch" href="/assets/js/20.708a3e23.js"><link rel="prefetch" href="/assets/js/21.3a0dc559.js"><link rel="prefetch" href="/assets/js/22.72642347.js"><link rel="prefetch" href="/assets/js/4.498eb10c.js"><link rel="prefetch" href="/assets/js/5.ee589329.js"><link rel="prefetch" href="/assets/js/6.4e969a30.js"><link rel="prefetch" href="/assets/js/7.1153cd27.js"><link rel="prefetch" href="/assets/js/8.cb8ac540.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cb877f3d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/favicon.ico" alt="私人知识图书馆" class="logo"> <span class="site-name can-hide">私人知识图书馆</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  概述
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/learn-typescript.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/ChromeExtensions.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  ChromeExtensions
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Java
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/Java8-Stream.html" class="nav-link">
+  Stream
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Java8-Optional.html" class="nav-link">
+  Optional
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/Spring笔记.html" class="nav-link">
+  Spring笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Spring-MVC笔记.html" class="nav-link">
+  SpringMVC笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Mybatis笔记.html" class="nav-link">
+  Mybatis笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Maven学习笔记.html" class="nav-link">
+  Maven学习笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-zookeeper.html" class="nav-link">
+  Zookeeper
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-elasticstack.html" class="nav-link">
+  Elasticstack
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Dubbo学习笔记.html" class="nav-link">
+  Dubbo学习笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具|部署" class="dropdown-title"><span class="title">工具|部署</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具|部署" class="mobile-dropdown-title"><span class="title">工具|部署</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/java/tool/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/md/java/tool/gittool.html" class="nav-link">
+  Gitee
+</a></li></ul></div></div><div class="nav-item"><a href="/md/about/about-me.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/amzpiper" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  概述
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/learn-typescript.html" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/ChromeExtensions.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  ChromeExtensions
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Java
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/Java8-Stream.html" class="nav-link">
+  Stream
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Java8-Optional.html" class="nav-link">
+  Optional
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/md/java/learn/Spring笔记.html" class="nav-link">
+  Spring笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Spring-MVC笔记.html" class="nav-link">
+  SpringMVC笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Mybatis笔记.html" class="nav-link">
+  Mybatis笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Maven学习笔记.html" class="nav-link">
+  Maven学习笔记
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-zookeeper.html" class="nav-link">
+  Zookeeper
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/learn-elasticstack.html" class="nav-link">
+  Elasticstack
+</a></li><li class="dropdown-subitem"><a href="/md/java/learn/Dubbo学习笔记.html" class="nav-link">
+  Dubbo学习笔记
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具|部署" class="dropdown-title"><span class="title">工具|部署</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具|部署" class="mobile-dropdown-title"><span class="title">工具|部署</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/java/tool/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/md/java/tool/gittool.html" class="nav-link">
+  Gitee
+</a></li></ul></div></div><div class="nav-item"><a href="/md/about/about-me.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/amzpiper" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>前端</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/md/java/learn/learn-typescript.html" class="sidebar-link">TypeScript</a></li><li><a href="/md/java/learn/ChromeExtensions.html" aria-current="page" class="active sidebar-link">Chrome Extensions</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/md/java/learn/ChromeExtensions.html#_1-概览" class="sidebar-link">1. 概览</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/ChromeExtensions.html#_2-入门" class="sidebar-link">2. 入门</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/ChromeExtensions.html#_3-数据存储" class="sidebar-link">3.数据存储</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/ChromeExtensions.html#_4-应用场景" class="sidebar-link">4.应用场景</a></li><li class="sidebar-sub-header"><a href="/md/java/learn/ChromeExtensions.html#_5-实战" class="sidebar-link">5.实战</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Java</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/md/java/learn/Java8-Stream.html" class="sidebar-link">Java 8 - Stream</a></li><li><a href="/md/java/learn/Java8-Optional.html" class="sidebar-link">Java 8 - Optional</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>框架</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/md/java/learn/Spring笔记.html" class="sidebar-link">Spring</a></li><li><a href="/md/java/learn/Spring-MVC笔记.html" class="sidebar-link">SpringMVC</a></li><li><a href="/md/java/learn/Mybatis笔记.html" class="sidebar-link">Mybatis</a></li><li><a href="/md/java/learn/Maven学习笔记.html" class="sidebar-link">Maven</a></li><li><a href="/md/java/learn/learn-zookeeper.html" class="sidebar-link">Zookeeper</a></li><li><a href="/md/java/learn/learn-redis.html" class="sidebar-link">Redis</a></li><li><a href="/md/java/learn/learn-elasticstack.html" class="sidebar-link">Elasticstack</a></li><li><a href="/md/java/learn/Dubbo学习笔记.html" class="sidebar-link">Dubbo</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="chrome-extensions"><a href="#chrome-extensions" class="header-anchor">#</a> Chrome Extensions</h1> <h2 id="_1-概览"><a href="#_1-概览" class="header-anchor">#</a> 1. 概览</h2> <p><img src="/assets/img/Untitled.19380900.png" alt="Untitled.png"></p> <h2 id="_2-入门"><a href="#_2-入门" class="header-anchor">#</a> 2. <strong>入门</strong></h2> <p>首先我们看看的浏览器插件的定义:</p> <p>浏览器插件是基于Web技术（例如HTML，JavaScript和CSS）构建的可以定制浏览体验的小型软件程序。它们使用户可以根据个人需要或偏好来定制Chrome功能和行为。</p> <p>要想开发一款浏览器插件,我们只需要有一个manifest.json文件即可, 为了快速上手浏览器插件开发,我们需要把浏览器开发者工具打开, 具体步骤如下:</p> <ol><li><strong>在谷歌浏览器中输入chrome://extensions/</strong></li> <li><strong>将开发者模式启动</strong></li></ol> <p><img src="https://pic3.zhimg.com/80/v2-a557be3300d7012d25f89d00038b7e22_720w.jpg" alt="https://pic3.zhimg.com/80/v2-a557be3300d7012d25f89d00038b7e22_720w.jpg"></p> <h3 id="_2-1-导入自己的浏览器插件包"><a href="#_2-1-导入自己的浏览器插件包" class="header-anchor">#</a> 2.1 <strong>导入自己的浏览器插件包</strong></h3> <p>通过以上三个步骤我们就可以开启浏览器插件开发之旅了.浏览器插件一般放在浏览器地址栏右侧,我们可以在manifest.json文件配置插件的icon,并配置一定的规则,就能看到我们的浏览器插件图标了,如下图:</p> <p><img src="https://pic4.zhimg.com/80/v2-023f0963017950f69fee85bfaf35bd3b_720w.jpg" alt="https://pic4.zhimg.com/80/v2-023f0963017950f69fee85bfaf35bd3b_720w.jpg"></p> <p>下面我们来具体讲解一下浏览器插件开发的核心概念.</p> <h3 id="_2-2-核心知识点"><a href="#_2-2-核心知识点" class="header-anchor">#</a> 2.2 <strong>核心知识点</strong></h3> <p>浏览器插件一般涉及以下几个核心文件:</p> <ul><li><strong>manifest.json</strong> 用来配置所有和插件相关的配置(必须放在根目录)</li> <li><strong>background.js</strong> 后台脚本(后台页面),生命周期和浏览器一致,一般放置全局代码</li> <li><strong>content-scripts</strong> 插件向页面注入脚本的一种形式,我们可以通过content-scripts向页面注入js和css资源,并可控制允许注入的范围</li> <li><strong>popup</strong> 点击插件图标后打开的自定义窗口, 用来处理用户交互</li></ul> <p>笔者画了一张简图来大致表示一下它们之间的关系:</p> <p><img src="https://pic4.zhimg.com/80/v2-bcebb2fc6d562fefac9de971f6e0ee9f_720w.jpg" alt="https://pic4.zhimg.com/80/v2-bcebb2fc6d562fefac9de971f6e0ee9f_720w.jpg"></p> <p>接下来我们来具体了解一下一上几个核心知识点.</p> <h4 id="_2-2-1-manifest-json"><a href="#_2-2-1-manifest-json" class="header-anchor">#</a> 2**.2.1 manifest.json**</h4> <p>谷歌官网简单的配置,如下:</p> <div class="language-docker line-numbers-mode"><pre class="language-docker"><code>{
+    &quot;name&quot;: &quot;My Extension&quot;,
+    &quot;version&quot;: &quot;2.1&quot;,
+    &quot;description&quot;: &quot;Gets information from Google.&quot;,
+    &quot;icons&quot;: {
+      &quot;128&quot;: &quot;icon_16.png&quot;,
+      &quot;128&quot;: &quot;icon_32.png&quot;,
+      &quot;128&quot;: &quot;icon_48.png&quot;,
+      &quot;128&quot;: &quot;icon_128.png&quot;
+    },
+    &quot;background&quot;: {
+      &quot;persistent&quot;: false,
+      &quot;scripts&quot;: [&quot;background_script.js&quot;]
+    },
+    &quot;permissions&quot;: [&quot;https://*.google.com/&quot;, &quot;activeTab&quot;],
+    &quot;browser_action&quot;: {
+      &quot;default_icon&quot;: &quot;icon_16.png&quot;,
+      &quot;default_popup&quot;: &quot;popup.html&quot;
+    }
+ }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>各字段含义介绍如下:</p> <ul><li><strong>name</strong> 浏览器插件名称, 将会在插件列表中显示</li> <li><strong>description</strong> 浏览器插件简介, 方便告诉开发者插件的功能和作用, 将会在插件列表中显示</li> <li><strong>version</strong> 浏览器插件版本</li> <li><strong>icon</strong> 浏览器插件图标</li></ul> <p><img src="/assets/img/Untitled1.392fdf44.png" alt="Untitled1.png"></p> <ul><li><strong>background</strong> 背景页的脚本路径,一般为插件目录的相对地址</li> <li><strong>permissions</strong> 允许使用的浏览器API的权限,比如contextMenus(右键菜单), tabs(操作标签), webRequest(使用web请求), storage(允许使用本地存储), “<strong>http://</strong>”(可以通过executeScript或者insertCSS访问的网站)</li> <li><strong>browser_action</strong> 浏览器右上角图标设置(包括popup页面, 鼠标悬停时的标题, icon等)</li> <li><strong>content_scripts</strong> 需要直接注入页面的javascript脚本</li> <li><strong>web_accessible_resources</strong> 普通页面能够直接访问的插件资源列表，如果不设置是无法直接访问的</li> <li><strong>chrome_url_overrides</strong> 覆盖浏览器默认页面(经常用来做浏览器的自定义桌面)</li> <li><strong>omnibox</strong> 向地址栏注册一个关键字以提供搜索建议，只能设置一个关键字(多用于自定义搜索拦截)</li> <li><strong>default_locale</strong> 默认语言(比如&quot;zh_CN&quot;)</li></ul> <h4 id="_2-2-2-background-js"><a href="#_2-2-2-background-js" class="header-anchor">#</a> 2**.2.2 background.js**</h4> <p>background页面主要用来提供一些全局配置, 事件监听, 业务转发等.举几个常用案例:</p> <p><strong>1.定义右键菜单</strong></p> <div class="language-docker line-numbers-mode"><pre class="language-docker"><code>// background.js
+const systems = {
+  a: '趣谈前端',
+  b: '掘金',
+  c: '微信'
+}
+
+chrome.runtime.onInstalled.addListener(function() {
+  // 上下文菜单
+  for (let key of Object.keys(systems)) {
+    chrome.contextMenus.create({
+      id: key,
+      title: systems[key],
+      type: 'normal',
+      contexts: ['selection'],
+    });
+  }
+});
+
+// manifest.json
+{
+    &quot;permissions&quot;: [&quot;contextMenus&quot;]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>效果如下:</p> <p><img src="/assets/img/Untitled2.79cddbab.png" alt="Untitled2.png"></p> <p><strong>2.设置只有.com后缀的页面才会激活插件</strong></p> <div class="language-docker line-numbers-mode"><pre class="language-docker"><code>chrome.runtime.onInstalled.addListener(function() {
+  // 类似于什么时候激活浏览器插件图标这种感觉
+  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
+    chrome.declarativeContent.onPageChanged.addRules([{
+      conditions: [new chrome.declarativeContent.PageStateMatcher({
+        pageUrl: {hostSuffix: '.com'},
+      })
+      ],
+      actions: [new chrome.declarativeContent.ShowPageAction()]
+    }]);
+  });
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>如下图所示,当页面地址的后缀不等于.com时,插件icon将不被激活:</p> <p><img src="https://pic3.zhimg.com/80/v2-e71bb0259baff0138a3ed613d3636342_720w.jpg" alt="https://pic3.zhimg.com/80/v2-e71bb0259baff0138a3ed613d3636342_720w.jpg"></p> <p><strong>3.和content_script或者popup页面进行消息通信</strong></p> <div class="language-docker line-numbers-mode"><pre class="language-docker"><code>chrome.runtime.onMessage.addListener(
+	function(request, sender, sendResponse) {
+	  console.log(sender.tab ?
+	              &quot;from a content script:&quot; + sender.tab.url :
+	              &quot;from the extension&quot;);
+	  if (request.greeting == &quot;hello&quot;)
+	    sendResponse({farewell: &quot;goodbye&quot;});
+	});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="_2-2-3-content-scripts"><a href="#_2-2-3-content-scripts" class="header-anchor">#</a> 2.<strong>2.3 content-scripts</strong></h4> <p>内容脚本一般植入会被植入到页面中, 并且可以控制页面中的dom. 我们可以利用它实现屏蔽网页广告, 定制页面皮肤等操作. 在manifest.json中的基本配置如下:</p> <div class="language-docker line-numbers-mode"><pre class="language-docker"><code>{
+    &quot;content_scripts&quot;: [{
+    &quot;matches&quot;: [
+        &quot;http://*/*&quot;,
+        &quot;https://*/*&quot;
+    ],
+    &quot;js&quot;: [
+        &quot;lib/jquery3.4.min.js&quot;,
+        &quot;content_script.js&quot;
+    ],
+    &quot;css&quot;: [&quot;base.css&quot;]
+  }],
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>以上代码中我们定义了content_scripts允许注入的页面范围, 插入页面的js以及css, 这样我们就能轻松改变某一个页面的样式.比如我们可以在页面中注入一个按钮:</p> <p><img src="/assets/img/Untitled3.d5246605.png" alt="Untitled3.png"></p> <p>后面的浏览器插件案例中会详细介绍content_scripts的用法.</p> <h3 id="_2-2-4-popup"><a href="#_2-2-4-popup" class="header-anchor">#</a> <strong>2.2.4 popup</strong></h3> <p>popup是用户点击插件图标时打开的一个小窗口，当失去焦点后窗口就立即关闭，我们一般用它来处理一些简单的用户交互和插件说明。</p> <p>由于popup窗口也是一个网页,所以我们一般会建立一个popup.html和popup.js用来控制popup的页面展示和交互.我们在manifest.json中配置如下:</p> <div class="language-docker line-numbers-mode"><pre class="language-docker"><code>{
+    &quot;page_action&quot;: {
+        &quot;default_title&quot;: &quot;小夕图片提取插件&quot;,
+        &quot;default_popup&quot;: &quot;popup.html&quot;
+  },
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>这里要注意一点的是,我们在popup.html中不能直接使用script脚本,需要用引入脚本文件的方式.如下:</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>在线图片提取工具<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Content-Type<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/html; charset=UTF-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>pop-wrap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>lib/jquery3.4.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>popup.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>以下是笔者写的一个插件的popup页面:</p> <p><img src="/assets/img/Untitled4.77e6730a.png" alt="Untitled4.png"></p> <h3 id="_2-3-通信机制"><a href="#_2-3-通信机制" class="header-anchor">#</a> 2.3.通信机制</h3> <p>对于一个相对复杂的浏览器插件来说,我们不仅仅只操作dom或者提供基本的功能就行了,我们还需要向第三方或者自己的服务器抓取有用的页面数据,这个时候就需要用到插件的通信机制了.</p> <p>因为content_script脚本存在于当前页面,受同源策略影响,导致我们无法将捕获到的数据传给第三方平台或者自己的服务器, 所以我们需要基于浏览器的通信API.一下是谷歌浏览器插件的通信流程:</p> <p>![https://pic2.zhimg.com/80/v2-5a05979498bf90fe0443290623e1c8cd_720w.jpghttps://pic2.zhimg.com/80/v2-5a05979498bf90fe0443290623e1c8cd_720w.jpg)</p> <h4 id="_2-3-1-popup和background相互通信"><a href="#_2-3-1-popup和background相互通信" class="header-anchor">#</a> 2.<strong>3.1 popup和background相互通信</strong></h4> <p>由官方文档可知popup可以直接访问background页的方法,所以popup可以直接与其通信:</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>// background.js
+var getData = (data) =&gt; { console.log('拿到数据:' + data) }
+// popup.js
+let bgObj = chrome.extension.getBackgroundPage();
+bgObj.getData(); // 访问bg的函数
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_2-3-2-popup或者background页和content-script通信"><a href="#_2-3-2-popup或者background页和content-script通信" class="header-anchor">#</a> 2.<strong>3.2 popup或者background页和content_script通信</strong></h4> <p>这里我们使用chrome的tabs API,如下:</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>// popup.js
+// 发送消息给content_script
+chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.sendMessage(tabs[0].id, &quot;activeBtn&quot;, function(response) {
+      console.log(response);
+    });
+  });
+  
+// 接收消息
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    console.log(sender.tab ?
+                &quot;from a content script:&quot; + sender.tab.url :
+                &quot;from the extension&quot;);
+    if (request.greeting == &quot;hello&quot;)
+      sendResponse({farewell: &quot;goodbye&quot;});
+  });
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>content_script接收和发送消息:</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>// 接收消息
+chrome.runtime.onMessage.addListener(
+  function(message, sender, sendResponse) {
+    if (message == &quot;activeBtn&quot;){
+      // ...
+      sendResponse({farewell: &quot;激活成功&quot;});
+    }
+ });
+ 
+ // 主动发送消息
+ chrome.runtime.sendMessage({greeting: &quot;hello&quot;}, function(response) {
+   console.log(response, document.body);
+   // document.body.style.backgroundColor=&quot;orange&quot;
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>有关消息的长连接,在谷歌官网也写的很清楚:</p> <p><img src="https://pic2.zhimg.com/80/v2-8064fff68ca7ab8e0d40631b6b7155fd_720w.jpg" alt="https://pic2.zhimg.com/80/v2-8064fff68ca7ab8e0d40631b6b7155fd_720w.jpg"></p> <p>我们可以采用如下方式进行长连接:</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>// content_script.js
+var port = chrome.runtime.connect({name: &quot;徐小夕&quot;});
+port.postMessage({Ling: &quot;你好&quot;});
+port.onMessage.addListener(function(msg) {
+  if (msg.question == &quot;你是做什么滴?&quot;)
+    port.postMessage({answer: &quot;搬砖&quot;});
+  else if (msg.question == &quot;搬砖有钱吗?&quot;)
+    port.postMessage({answer: &quot;木有&quot;});
+});
+
+// popup.js
+chrome.runtime.onConnect.addListener(function(port) {
+  port.onMessage.addListener(function(msg) {
+    if (msg.Ling == &quot;你好&quot;)
+      port.postMessage({question: &quot;你是做什么滴?&quot;});
+    else if (msg.answer == &quot;搬砖&quot;)
+      port.postMessage({question: &quot;搬砖有钱吗?&quot;});
+    else if (msg.answer == &quot;木有&quot;)
+      port.postMessage({question: &quot;太难了.&quot;});
+  });
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="_3-数据存储"><a href="#_3-数据存储" class="header-anchor">#</a> <strong>3.数据存储</strong></h2> <p>chrome.storage用来针对插件全局进行数据存储,我们在任何一个页面(popup或content_script或background)下存储了数据,我们在以上三个页面都可以获取到, 具体用法如下:</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>获取数据
+chrome.storage.sync.get('imgArr', function(data) {
+  console.log(data)
+});
+// 保存数据
+chrome.storage.sync.set({'imgArr': imgArr}, function() {
+    console.log('保存成功');
+  });
+  
+// 另一种方式
+chrome.storage.local.set({key: value}, function() {
+  console.log('Value is set to ' + value);
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="_4-应用场景"><a href="#_4-应用场景" class="header-anchor">#</a> <strong>4.应用场景</strong></h2> <p>谷歌浏览器的插件应用场景很多,正如文章开头的思维导图中写的.以下是笔者总结的一些应用场景，大家感兴趣可以尝试去实现：</p> <ul><li>谷歌浏览器自定义桌面</li> <li>网页性能分析工具</li> <li>网页爬虫</li> <li>埋点工具</li> <li>网页热力图生成工具</li> <li>安全拦截插件</li> <li>广告过滤插件</li> <li>网站动态换肤</li> <li>第三方数据导入</li> <li>代码格式化工具</li> <li>在线协作工具</li> <li>防作弊插件</li></ul> <p>还有很多实用工具可以开发，大家可以好好把玩。接下来就来通过实现一个网页图片提取插件，来总结以下浏览器插件开发流程。</p> <h2 id="_5-实战"><a href="#_5-实战" class="header-anchor">#</a> 5.实战</h2> <h3 id="_5-1-开发一款抓取网站图片资源的浏览器插件"><a href="#_5-1-开发一款抓取网站图片资源的浏览器插件" class="header-anchor">#</a> 5.1. 开发一款抓取网站图片资源的浏览器插件</h3> <p>首先还是按照笔者的风格，在开发任何一种工具之前都要明确需求，所以我们来看看该插件的功能点：</p> <ul><li>能植入网页按钮，通过点击按钮捕获网页图片</li> <li>能在用户端展示捕获的图片</li> <li>点击插件能预览捕获的图片</li></ul> <p>基本上就这几个功能，接下来我会展示核心代码，在介绍代码之前我们先预览一下插件的实现效果：</p> <p><img src="https://pic3.zhimg.com/80/v2-0c79ea16b92fb0619cd70248a8090462_720w.jpg" alt="https://pic3.zhimg.com/80/v2-0c79ea16b92fb0619cd70248a8090462_720w.jpg"></p> <p><img src="https://pic2.zhimg.com/80/v2-ecee95b625f566a9595d73d55768c211_720w.jpg" alt="https://pic2.zhimg.com/80/v2-ecee95b625f566a9595d73d55768c211_720w.jpg"></p> <p>插件目录结构如下：</p> <p><img src="https://pic1.zhimg.com/80/v2-79f003a0e9a21ec8566a37a3a4820e50_720w.jpg" alt="https://pic1.zhimg.com/80/v2-79f003a0e9a21ec8566a37a3a4820e50_720w.jpg"></p> <p>因为插件的开发比较简单，所以我直接用jquery开发。这里我们主要关注popup.js和content_script.js, popup.js中主要用来获取从content_script页传过来的图片数据，并展示在popup.html中，另外又一个需要注意的是当页面没有注入生成按钮时，popupu需要发送信息给content页面，主动让其生成按钮，代码如下：</p> <div class="language-jsx line-numbers-mode"><pre class="language-jsx"><code>chrome<span class="token punctuation">.</span>storage<span class="token punctuation">.</span>sync<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'imgArr'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  data<span class="token punctuation">.</span>imgArr <span class="token operator">&amp;&amp;</span> data<span class="token punctuation">.</span>imgArr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> imgWrap <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;&lt;div class='img-box'&gt;&lt;/div&gt;&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">var</span> img <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;&lt;img src='&quot;</span> <span class="token operator">+</span> item <span class="token operator">+</span> <span class="token string">&quot;' alt='&quot;</span> <span class="token operator">+</span> item <span class="token operator">+</span> <span class="token string">&quot;' /&gt;&quot;</span><span class="token punctuation">)</span>
+    imgWrap<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>img<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#content'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>imgWrap<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.empty'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#activeBtn'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">element</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  chrome<span class="token punctuation">.</span>tabs<span class="token punctuation">.</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">active</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token literal-property property">currentWindow</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">tabs</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    chrome<span class="token punctuation">.</span>tabs<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span>tabs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token punctuation">,</span> <span class="token string">&quot;activeBtn&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>对于content页面，我们需要实现的是动态生成按钮，并且在页面中植入弹窗来展示获取到的图片，另一方面需要将图片数据传递给storage，以便popup页面可以获取图片数据。</p> <p>由于页面比较简单，笔者就不用过多的第三方库了，笔者先简单手写一个modal组件，代码如下：</p> <div class="language-jsx line-numbers-mode"><pre class="language-jsx"><code><span class="token comment">// 弹窗</span>
+<span class="token operator">~</span><span class="token keyword">function</span> <span class="token function">Modal</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> modal<span class="token punctuation">;</span>
+  
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token keyword">instanceof</span> <span class="token class-name">Modal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">init</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">opt</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      modal <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;&lt;div class='modal'&gt;&lt;/div&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> title <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;&lt;div class='modal-title'&gt;&quot;</span> <span class="token operator">+</span> opt<span class="token punctuation">.</span>title <span class="token operator">+</span> <span class="token string">&quot;&lt;/div&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> close_btn <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;&lt;span class='modal-close-btn'&gt;X&lt;/span&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> content <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;&lt;div class='modal-content'&gt;&lt;/div&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> mask <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;&lt;div class='modal-mask'&gt;&lt;/div&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      close_btn<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        modal<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      title<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>close_btn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      content<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      content<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>opt<span class="token punctuation">.</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      modal<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      modal<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>mask<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>modal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">show</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">opt</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>modal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        modal<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">title</span><span class="token operator">:</span> opt<span class="token punctuation">.</span>title <span class="token operator">||</span> <span class="token string">'标题'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">content</span><span class="token operator">:</span> opt<span class="token punctuation">.</span>content <span class="token operator">||</span> <span class="token string">''</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+        modal<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">hide</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      modal<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span>Modal <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Modal</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><p><strong>第一步，我们先批量获取页面图片数据：</strong></p> <div class="language-jsx line-numbers-mode"><pre class="language-jsx"><code><span class="token keyword">var</span> imgArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">i</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> src <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> realSrc <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^(http|https)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>src<span class="token punctuation">)</span> <span class="token operator">?</span> src <span class="token operator">:</span> location<span class="token punctuation">.</span>protocol<span class="token operator">+</span> <span class="token string">'//'</span> <span class="token operator">+</span> location<span class="token punctuation">.</span>host <span class="token operator">+</span> src<span class="token punctuation">;</span>
+  imgArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>realSrc<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>因为图片的src路径可能是相对地址，所以笔者在这里用正则简单处理以下，当然我们可以进行更细粒度的控制。</p> <p><strong>第二步，将图片数据存储到storage中：</strong></p> <div class="language-jsx line-numbers-mode"><pre class="language-jsx"><code>chrome<span class="token punctuation">.</span>storage<span class="token punctuation">.</span>sync<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string-property property">'imgArr'</span><span class="token operator">:</span> imgArr<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'保存成功'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>第三步，生成预览图片的弹窗，这里用笔者上面实现的modal组件</strong>：</p> <div class="language-jsx line-numbers-mode"><pre class="language-jsx"><code>Modal<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'提取结果'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">content</span><span class="token operator">:</span> imgBox
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>第四步，当popup发送激活按钮的通知时，我们要在网页中动态插入生成按钮：</strong></p> <div class="language-jsx line-numbers-mode"><pre class="language-jsx"><code>chrome<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span>onMessage<span class="token punctuation">.</span><span class="token function">addListener</span><span class="token punctuation">(</span>
+  <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">message<span class="token punctuation">,</span> sender<span class="token punctuation">,</span> sendResponse</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>message <span class="token operator">==</span> <span class="token string">&quot;activeBtn&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.crawl-btn'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;&lt;div class='crawl-btn'&gt;提取&lt;/div&gt;&quot;</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.crawl-btn'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">&quot;background-color&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;orange&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.crawl-btn'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">&quot;background-color&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;#06c&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token function">sendResponse</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">farewell</span><span class="token operator">:</span> <span class="token string">&quot;激活成功&quot;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>setTimeout那段纯属是为了吸引用户视线，当然我们可以用更优雅的方式来处理。插件核心代码主要是这些，当然还有很多细节要考虑，我把配置文件和一些细节放到github了，如果感兴趣的朋友可以安装感受一下。</p> <p>github地址：<a href="https://github.com/MrXujiang/fetchImg" target="_blank" rel="noopener noreferrer">https://github.com/MrXujiang/fetchImg<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/1/15 下午2:19:19</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/md/java/learn/learn-typescript.html" class="prev">
+        TypeScript
+      </a></span> <span class="next"><a href="/md/java/learn/Java8-Stream.html">
+        Java 8 - Stream
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.1f563e48.js" defer></script><script src="/assets/js/3.53f669bd.js" defer></script><script src="/assets/js/9.5e517e4f.js" defer></script>
+  </body>
+</html>
